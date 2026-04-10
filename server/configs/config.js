@@ -7,9 +7,6 @@ const dev = {
   db: {
     url: process.env.MONGO_URL,
   },
-  dns: {
-    port: process.env.DNS_SERVER,
-  },
   cors: {
     origin: process.env.CLIENT_URL,
   },
