@@ -46,7 +46,7 @@ const useAxios = () => {
             };
             setAuth(updatedAuth);
 
-            localStorage.setItem("booknest_auth", JSON.stringify(updatedAuth));
+            localStorage.setItem("taskify_auth", JSON.stringify(updatedAuth));
 
             // Retry the original request with the new token
             originalRequest.headers.Authorization = `Bearer ${token}`;

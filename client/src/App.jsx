@@ -3,6 +3,7 @@ import MainLayout from "./components/shared/MainLayout";
 import ErrorPage from "./pages/ErrorPage";
 import LoginPage from "./pages/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage";
+import TaskPage from "./pages/TaskPage";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "signup",
         element: <RegistrationPage />,
+      },
+      {
+        path: "tasks",
+        element: <TaskPage />,
       },
     ],
   },
