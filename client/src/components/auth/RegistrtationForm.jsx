@@ -43,7 +43,7 @@ const RegistrtationForm = () => {
 
       navigate("/");
     } catch (error) {
-      setErrorMsg(error.response?.data?.message);
+      setErrorMsg(error.response?.data?.message || "something went wrong");
     } finally {
       setLoading(false);
     }

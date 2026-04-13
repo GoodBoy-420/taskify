@@ -46,7 +46,7 @@ const LoginForm = () => {
 
       navigate("/tasks");
     } catch (error) {
-      setErrorMsg(error.response?.data?.message);
+      setErrorMsg(error.response?.data?.message || "Something went wrong");
     } finally {
       setLoading(false);
     }
